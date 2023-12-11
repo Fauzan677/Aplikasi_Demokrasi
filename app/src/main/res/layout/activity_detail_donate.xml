@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/warna4"
+    tools:context=".detailDonateActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-5dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/dn_header"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:onClick="back"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/back"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Donasi"
+            android:fontFamily="@font/manrope_bold"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/warna2"
+            android:layout_marginLeft="90sp"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dn_header">
+
+        <LinearLayout
+            android:id="@+id/dn_isi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="375dp"
+                android:layout_height="150dp"
+                android:src="@drawable/donate"
+                android:layout_gravity="center"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="375dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="20dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:id="@+id/img_item_photo4"
+                    android:layout_width="match_parent"
+                    android:background="#B1AFE9"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    tools:src="@tools:sample/avatars"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="375dp"
+                android:layout_height="500dp"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/dn_txt_isi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:gravity="fill_horizontal"
+                        android:textSize="20sp"
+                        android:layout_margin="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jenis Donasi"
+                        android:textSize="24sp"
+                        android:fontFamily="@font/manrope_medium"
+                        android:layout_marginLeft="40dp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="190dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:onClick="makanan"
+                            android:layout_width="100dp"
+                            android:layout_height="170dp"
+                            android:backgroundTint="@color/warna4"
+                            android:layout_marginLeft="20dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="5dp"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    android:src="@drawable/donasi_makanan"
+                                    android:layout_marginTop="10dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Makanan"
+                                    android:fontFamily="@font/manrope_medium"
+                                    android:textSize="20sp"
+                                    android:textAlignment="center"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:onClick="uang"
+                            android:layout_width="100dp"
+                            android:layout_height="170dp"
+                            android:backgroundTint="@color/warna4"
+                            android:layout_marginLeft="20dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="5dp"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    android:src="@drawable/donasi_uang"
+                                    android:layout_marginTop="10dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Uang"
+                                    android:fontFamily="@font/manrope_medium"
+                                    android:textSize="20sp"
+                                    android:textAlignment="center"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="100dp"
+                            android:layout_height="170dp"
+                            android:backgroundTint="@color/warna4"
+                            android:layout_marginLeft="20dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="5dp"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="70dp"
+                                    android:src="@drawable/tanda_more"
+                                    android:layout_marginTop="40dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Lainnya"
+                                    android:fontFamily="@font/manrope_medium"
+                                    android:textSize="20sp"
+                                    android:textAlignment="center"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

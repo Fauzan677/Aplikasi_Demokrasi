@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="warna1">#338DBF</color>
+    <color name="warna2">#010066</color>
+    <color name="warna3">#26A6FE</color>
+    <color name="warna4">#DFF6FD</color>
+    <color name="warna5">#FF9EB1</color>
+    <color name="warna6">#FFDA8F</color>
+    <color name="warna7">#FB9A28</color>
+    <color name="warna8">#C16544</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="warna9">#573353</color>
+
+
+</resources>

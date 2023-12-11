@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F6F5F5"
+    tools:context=".ProfilePage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="410dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="#2196F3"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/dn_header"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:onClick="back"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/back"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profile Saya"
+                    android:fontFamily="@font/manrope_bold"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="75sp"
+                    />
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:foregroundGravity="center_horizontal"
+                app:cardCornerRadius="70dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/profil" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="Fauzan Najib Habibi"
+                android:textColor="#fff"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Subscribers"
+                        android:textSize="17dp"
+                        android:textColor="#000"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1000K+"
+                        android:textSize="27dp"
+                        android:textColor="#2196F3"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Likes"
+                        android:textSize="17dp"
+                        android:textColor="#000"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="500K+"
+                        android:textSize="27dp"
+                        android:textColor="#2196F3"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shares"
+                        android:textSize="17dp"
+                        android:textColor="#000"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="33.1K+"
+                        android:textSize="27dp"
+                        android:textColor="#2196F3"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/gmail"
+                android:layout_width="360dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp"
+                android:background="@color/white"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/baseline_email_24"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="18dp"/>
+
+                    <TextView
+                        android:id="@+id/emailTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="fauzannajib@gmail.com"
+                        android:textColor="#000"
+                        android:textSize="22dp"
+                        android:paddingLeft="10dp"
+                        android:layout_gravity="center_vertical"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/baseline_navigate_next_24"
+                    android:layout_gravity="center|end"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/phone"
+                android:layout_marginTop="20dp"
+                android:layout_width="360dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp"
+                android:background="@color/white"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/baseline_phone_iphone_24"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="18dp"/>
+
+                    <TextView
+                        android:id="@+id/phoneTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Masukan Nomor"
+                        android:textColor="#000"
+                        android:textSize="22dp"
+                        android:paddingLeft="10dp"
+                        android:layout_gravity="center_vertical"/>
+
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/baseline_navigate_next_24"
+                    android:layout_gravity="center|end"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/location"
+                android:layout_marginTop="20dp"
+                android:layout_width="360dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp"
+                android:background="@color/white"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/baseline_location_on_24"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="18dp"/>
+
+                    <TextView
+                        android:id="@+id/locationTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Masukan Lokasi"
+                        android:textColor="#000"
+                        android:textSize="22dp"
+                        android:paddingLeft="10dp"
+                        android:layout_gravity="center_vertical"/>
+
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/baseline_navigate_next_24"
+                    android:layout_gravity="center|end"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:onClick="logout"
+                android:id="@+id/logout"
+                android:layout_marginTop="20dp"
+                android:layout_width="360dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/baseline_logout1_24"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="18dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="keluar"
+                        android:textColor="#000"
+                        android:textSize="22dp"
+                        android:paddingLeft="10dp"
+                        android:layout_gravity="center_vertical"/>
+
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/baseline_navigate_next_24"
+                    android:layout_gravity="center|end"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+<!--        <Button-->
+<!--            android:onClick="profil"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Kembali ke Menu"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:textSize="18dp" />-->
+</LinearLayout>
+
+
+
+

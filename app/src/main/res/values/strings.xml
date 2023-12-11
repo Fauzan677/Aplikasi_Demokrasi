@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">demokrasi</string>
+    <string name="lupaPassword"><u>Lupa Password?</u></string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="desc">"ini deskripsinya"</string>
+    <string name="nameProfile">"nama daerah"</string>
+    <string name="berita_wisata">Libur Lebaran di Jogja dan sekitarnya di DIY lebih sepi ketimbang tahun lalu. Dinas Pariwisata (Dispar) DIY segera mengevaluasi situasi ini.
+        \n\nDispar DIY semula mematok target kunjungan 5,9 juta wisatawan di libur Lebaran 2023. Kepala Dispar DIY Singgih Raharjo memperkirakan jumlah wisatawan meleset dari target.</string>
+    <string name="keresahan_parkir">Pantes Jogja sepi saat libur panjang lebaran 2023 lur. \n\nparkiran masjid gede kauman, Sabtu 29 April 2023. \n\nJogja saiki memang ISTIMEWA.</string>
+    <string name="biodata_walikota_jogja">Sumadi, SH., MH adalah seorang pejabat yang saat ini menjabat sebagai Penjabat (Pj) Walikota Yogyakarta sejak 28 April 2022. Sebelumnya,
+        ia menjabat sebagai Sekretaris Daerah (Sekda) Kota Yogyakarta sejak 26 November 2020. Sebelum menjabat sebagai Sekda Kota Yogyakarta dan Pj Walikota Yogyakarta,
+        Sumadi telah meniti karir di berbagai posisi penting di lingkungan pemerintahan. Ia pernah menjabat sebagai Kepala Biro Pemerintahan dan Humas Setda DIY, Kepala Biro Pemerintahan Setda DIY,
+        dan juga pernah menjadi Kasubbag Hukum pada Dinas Pendapatan Kota Yogyakarta.</string>
+    <string name="biodata_dprd">"Nuryadi, S.Pd adalah seorang politisi yang menjabat sebagai Ketua DPRD (Dewan Perwakilan Rakyat Daerah) di Yogyakarta, Indonesia. Sebagai Ketua DPRD, Nuryadi memiliki tanggung jawab untuk memimpin dan mengawasi kegiatan legislatif di tingkat daerah. Sebelum menjabat sebagai Ketua DPRD Yogyakarta, Nuryadi terlebih dahulu menjadi anggota DPRD Yogyakarta. Dalam perjalanannya sebagai anggota DPRD, Nuryadi dikenal sebagai seorangpolitisi yang aktif dan memiliki pemahaman yang baik tentang masalah-masalah sosial dan politik yang dihadapi oleh masyarakat Yogyakarta."</string>
+    <string name="nameDonate">"Mari bersama-sama bantu guru honorer untuk meraih keadilan yang layak.\n\nDengan bantuanmu, kita bisa memberikan harapan kepada guru honorer dan memperjuangkan keadilan yang mereka perjuangkan selama ini."</string>
+</resources>

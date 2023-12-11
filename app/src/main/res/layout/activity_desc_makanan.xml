@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/warna4"
+    tools:context=".descMakananActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-5dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/dn_makanan_header"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:onClick="back"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/back"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Donasi Makanan"
+            android:fontFamily="@font/manrope_bold"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/warna2"
+            android:layout_marginLeft="65sp"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dn_makanan_header">
+
+        <LinearLayout
+            android:id="@+id/dn_makanan_isi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="375dp"
+                android:layout_height="150dp"
+                android:src="@drawable/donate"
+                android:layout_gravity="center"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="375dp"
+                android:layout_height="680dp"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/donasi_makanan"
+                        android:layout_marginTop="20sp"
+                        android:layout_marginLeft="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jumlah Donasi"
+                        android:textSize="24sp"
+                        android:fontFamily="@font/manrope_medium"
+                        android:layout_marginLeft="35dp"
+                        android:textColor="@color/black"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="80dp"
+                            android:layout_height="100dp"
+                            android:backgroundTint="@color/warna4"
+                            app:cardCornerRadius="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="35dp"
+                            app:cardElevation="5dp">
+
+                            <TextView
+                                android:id="@+id/donasi_jumlah_porsi"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="0"
+                                android:fontFamily="@font/manrope_medium"
+                                android:textSize="50sp"
+                                android:gravity="center"
+                                android:textColor="@color/black"
+                                />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="20dp">
+
+                            <Button
+                                android:id="@+id/tambah"
+                                android:layout_width="30dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/shape_rectangle_warna7"
+                                android:text="+"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:layout_marginTop="10dp"
+                                />
+
+                            <Button
+                                android:id="@+id/kurang"
+                                android:layout_width="30dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/shape_rectangle_warna8"
+                                android:text="-"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:layout_marginTop="20dp"
+                                />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Porsi"
+                            android:fontFamily="@font/manrope_medium"
+                            android:textSize="50sp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/black"
+
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Makanan"
+                        android:textSize="24sp"
+                        android:fontFamily="@font/manrope_medium"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        />
+
+                    <EditText
+                        android:layout_width="270dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/shape_rectangle_warna4"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="35dp"
+                        android:paddingLeft="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Deskripsi"
+                        android:textSize="24sp"
+                        android:fontFamily="@font/manrope_medium"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        />
+
+                    <EditText
+                        android:layout_width="270dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/shape_rectangle_warna4"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="35dp"
+                        android:paddingLeft="20dp"
+                        />
+
+                    <Button
+                        android:id="@+id/donasi"
+                        android:layout_width="140dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/shape_rectangle_warna6"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:text="DONASI"
+                        android:fontFamily="@font/mandali_regular"
+                        android:textSize="32sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#26A6FE"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

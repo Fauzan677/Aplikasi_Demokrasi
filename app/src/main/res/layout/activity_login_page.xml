@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginPage"
+    android:background="@color/warna1">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-20dp"
+        android:src="@drawable/bg_login"
+        android:id="@+id/bg_login_atas"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SELAMAT DATANG DI APLIKASI DEMOKRASI"
+            android:layout_marginTop="50dp"
+            android:textSize="32dp"
+            android:textAlignment="center"
+            android:textColor="@color/warna2"
+            android:textStyle="normal"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:elevation="5dp"
+            android:background="@color/white"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingTop="13dp"
+                android:paddingLeft="50dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/google"
+                    />
+
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="35dp"
+                    android:text="Lanjutkan dengan Google"
+                    android:textColor="#573353"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="15dp"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:elevation="5dp"
+            android:background="@color/white"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/log_txt_fb"
+                android:paddingTop="10dp"
+                android:paddingLeft="44dp"
+                >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/facebook"
+                    />
+
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="35dp"
+                    android:text="Lanjutkan dengan Facebook"
+                    android:textColor="#573353"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/Lg_fb"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="Masuk dengan email"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="#573353"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/garis_horizontal"
+            android:layout_marginTop="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@drawable/shape_rectangle_white"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:id="@+id/log_edt_email"
+            android:paddingLeft="30dp"
+            >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/user"
+                android:layout_marginTop="15dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/garis_tegak"
+                android:layout_marginLeft="20dp"
+                />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:hint="Username"
+                android:layout_marginLeft="15dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@drawable/shape_rectangle_white"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:paddingLeft="30dp"
+            >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/password"
+                android:layout_marginTop="15dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/garis_tegak"
+                android:layout_marginLeft="20dp"
+                />
+
+            <EditText
+                android:inputType="textPassword"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:hint="Password"
+                android:layout_marginLeft="15dp"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/garis_horizontal"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button
+            android:onClick="login"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_rectangle_purple"
+            android:text="Login"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:onClick="password"
+            android:id="@+id/lg_txt_lupa_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lupaPassword"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:text="Belum punya akun?"
+                />
+
+            <TextView
+                android:id="@+id/lg_txt_daftar"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Daftar"
+                android:textStyle="bold"
+                android:layout_marginLeft="3dp"
+                android:onClick="Daftar"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-17dp"
+        android:src="@drawable/bg_lg_bawah" />
+
+</RelativeLayout>
